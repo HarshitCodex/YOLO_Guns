@@ -25,8 +25,8 @@ with open(classesFile, 'rt') as f:
 
 # Give the configuration and weight files for the model and load the network using them.
 
-modelConfiguration = "/data-ssd/sunita/snowman/darknet-yolov3.cfg";
-modelWeights = "/data-ssd/sunita/snowman/darknet-yolov3_final.weights";
+modelConfiguration = "/content/YOLO_Guns/darknet-yolov3.cfg";
+modelWeights = "/content/YOLO_Guns/darknet53.conv.74";
 
 net = cv.dnn.readNetFromDarknet(modelConfiguration, modelWeights)
 net.setPreferableBackend(cv.dnn.DNN_BACKEND_OPENCV)
